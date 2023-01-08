@@ -21,13 +21,13 @@ body{
     color: #056de8;
     background-color: #fff;
 }
-.navbar-brand{
-    padding-left: 260px;
+
+.container-fluid{
+    width: 1000px;
 }
 .navbar-collapse{
+    min-width: 1000px;
     background-color: #fff;
-    padding-left: 150px;
-    padding-right: 20px;
 }
 .search{
     border-radius:999px;
@@ -37,3 +37,13 @@ body{
     background-color: #f6f6f6;
     padding-left: 18px;
 }
+
+.searchbtn{
+    background: url("/icon/search.png")center no-repeat;
+    width: 20px;
+    height: 24px;
+    border: none;
+    box-shadow: none;
+    background-size: 100% 100%;
+}
+/*hover focus问题*/
