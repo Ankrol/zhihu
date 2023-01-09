@@ -18,7 +18,7 @@ body{
     background-color: #fff;
     background-image:none;
     box-shadow: none;
-    color: #056de8;
+    text-decoration: none;
 }
 .navbar-expand-lg .navbar-nav>li>a:focus,
 .navbar-expand-lg .navbar-nav>li>a:hover {
@@ -51,3 +51,22 @@ body{
     background-size: 100% 100%;
 }
 /*hover focus问题*/
+.publishbtn{
+    margin: 15px 0px 0px 0px;
+}
+.publishbtn>a{
+    background: none;
+    background-color: #056de8;
+    border-color: #056de8;
+    padding: 8px 22px 8px 22px;
+    border-radius: 999px;
+    font-size: 15px;
+    color: white;
+
+}
+.publishbtn>a:hover,
+.publishbtn>a:focus{
+    background-color: #0461cf;
+    border-color: #0461cf;
+    text-decoration: none;
+}
