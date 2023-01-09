@@ -3,21 +3,25 @@ body{
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
 
-.navbar-default .navbar-nav>li>a {
+
+.navbar-expand-lg{
+    border-bottom: 1px #ebebeb;
+}
+.navbar-expand-lg .navbar-nav>li>a {
     color: #121212;
     font-size: 16px;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover{
+.navbar-expand-lg .navbar-nav>.active>a,
+.navbar-expand-lg .navbar-nav>.active>a:focus,
+.navbar-expand-lg .navbar-nav>.active>a:hover{
     background-color: #fff;
     background-image:none;
     box-shadow: none;
     color: #056de8;
 }
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-expand-lg .navbar-nav>li>a:focus,
+.navbar-expand-lg .navbar-nav>li>a:hover {
     color: #056de8;
     background-color: #fff;
 }
