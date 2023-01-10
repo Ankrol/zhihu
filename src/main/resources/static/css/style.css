@@ -1,14 +1,25 @@
 
 body{
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    color: #121212;
+    background-color: #f6f6f6;
 }
-
 
 .navbar-expand-lg{
     border-bottom: 1px #ebebeb;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.navbar-brand{
+    background: url("/icon/brand2.png")center no-repeat;
+    width: 100px;
+    height: 62px;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    margin-left: -25px;
 }
 .navbar-expand-lg .navbar-nav>li>a {
-    color: #121212;
+    color: #8590a6;
     font-size: 16px;
 }
 
@@ -19,10 +30,14 @@ body{
     background-image:none;
     box-shadow: none;
     text-decoration: none;
+    color: #121212;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    border-bottom: 4px solid #056de8;
 }
 .navbar-expand-lg .navbar-nav>li>a:focus,
 .navbar-expand-lg .navbar-nav>li>a:hover {
-    color: #056de8;
+    color: #121212;
     background-color: #fff;
 }
 
@@ -32,14 +47,21 @@ body{
 .navbar-collapse{
     min-width: 1000px;
     background-color: #fff;
+    margin-top: 6px;
 }
 .search{
     border-radius:999px;
-    border: #fff;
     box-shadow: none;
-    font-size: 13px;
+    font-size: 14px;
     background-color: #f6f6f6;
     padding-left: 18px;
+    min-width: 350px;
+    border: 1px solid #ebebeb;
+}
+.search:focus,
+.search:hover{
+    background-color:white;
+    border: 1px solid #8590a6;
 }
 
 .searchbtn{
@@ -50,23 +72,82 @@ body{
     box-shadow: none;
     background-size: 100% 100%;
 }
+.searchbtn.active,
+.searchbtn:active,
+.searchbtn:focus,
+.searchbtn:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pages{
+    text-align: center;
+}
+
 /*hover focus问题*/
-.publishbtn{
+.ques,
+.hotques{
+    background-color: white;
+}
+.quesbtn{
     margin: 15px 0px 0px 0px;
 }
-.publishbtn>a{
+.publishbtn,
+.quesbtn>a{
     background: none;
     background-color: #056de8;
     border-color: #056de8;
-    padding: 8px 22px 8px 22px;
+    padding: 7px 20px 7px 20px;
     border-radius: 999px;
     font-size: 15px;
     color: white;
 
 }
-.publishbtn>a:hover,
-.publishbtn>a:focus{
+.publishbtn:hover,
+.publishbtn:focus,
+.quesbtn>a:hover,
+.quesbtn>a:focus{
     background-color: #0461cf;
     border-color: #0461cf;
     text-decoration: none;
+}
+
+.publishleft,
+.publishright{
+    background-color: white;
+}
+
+/*问题列表*/
+
+.media-heading{
+    font-size: 18px;
+    font-weight: 600;
+}
+.description{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 15px;
+}
+.description:hover{
+    color: #646464;
+}
+.likebtn{
+    background: rgba(5,109,232,.1);
+    color: #056de8;
+    border: none;
+    margin-right: 20px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 3px;
+}
+.commentbtn{
+    border:none;
+    background-color: white;
+    color: #8590a6;
+}
+.likelogo,
+.commentlogo{
+    margin-right: 3px;
+}
+.media{
+    margin-top: 0px;
 }

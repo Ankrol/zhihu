@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white">
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -48,7 +48,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li th:if="${session.user!=null}">
-                    <div class="publishbtn">
+                    <div class="quesbtn">
                         <a href="/publish">提问</a>
                     </div>
                 </li>
@@ -71,7 +71,7 @@
 
     <div class="container-fluid">
         <div class="row">
-        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+        <div class="publishleft col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <h3><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">提问</span></h3>
             <hr>
             <form action="/publish" method="post">
@@ -96,7 +96,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+        <div class="publishright col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <br>
             <h3>问题发起指南</h3>
             · 问题标题：请用精简的语言描述您发布的问题，不超过25字
